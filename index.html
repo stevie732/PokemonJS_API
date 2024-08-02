@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Pokémon Search</h1>
+        <input type="text" id="pokemonName" placeholder="Enter Pokémon name">
+        <button onclick="fetchData()">Search</button>
+        <div id="pokemonInfo">
+            <img id="pokemonSprite" class="animate__animated" style="display: none;" alt="Pokemon Sprite">
+            <div id="pokemonNameDisplay"></div>
+            <div id="pokemonTypes"></div>
+            <div id="pokemonAbilities"></div>
+            <ul id="pokemonStats"></ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script>
+        document.getElementById('pokemonSprite').addEventListener('load', function() {
+            this.style.display = 'block';
+            this.classList.add('animate__bounceIn');
+            this.style.width = '200px';
+            this.style.height = 'auto';
+        });
+    </script>
+</body>
+</html>

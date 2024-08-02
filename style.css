@@ -1,0 +1,70 @@
+* {
+  color: darksalmon;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('./images/pokemon2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: darksalmon;
+  font-family: 'Arial', sans-serif;
+
+}
+
+.card {
+  border-radius: 15px;
+}
+
+#pokemonSprite {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+h1 {
+  color: #3d7dca;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#pokemonName {
+  border: 2px solid #ffcb05;
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+
+button {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #cc0000;
+}
+
+#pokemonInfo {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
